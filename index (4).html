@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkatama Road Map Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center font-bold text-xl text-slate-800 tracking-tight">
+                    <i class="fa-solid fa-robot text-blue-600 mr-2"></i> Berkatama<span class="text-blue-600">Auto</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#tantangan" class="hover:text-blue-600 transition">Tantangan</a>
+                    <a href="#solusi" class="hover:text-blue-600 transition">Solusi Ekosistem</a>
+                    <a href="#arsitektur" class="hover:text-blue-600 transition">Arsitektur ERP</a>
+                    <a href="#komparasi" class="hover:text-blue-600 transition">Komparasi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-32 pb-20 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIyIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+Cjwvc3ZnPg==')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-300 text-sm font-semibold mb-6">
+                <i class="fa-brands fa-telegram mr-1"></i> Telegram + Google Sheets + Apps Script
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                AUTOMASI CERDAS:<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">MEMBANGUN EKOSISTEM DIGITAL TANPA BIAYA</span>
+            </h1>
+            <p class="mt-4 text-xl text-slate-300 max-w-3xl mx-auto font-light">
+                Studi Kasus: Unlimited Cloud Storage Telegram & WebApp Database PT. Berkatama
+            </p>
+            <div class="mt-10">
+                <a href="#solusi" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg shadow-blue-500/30">
+                    Pelajari Sistem <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tantangan Section -->
+    <section id="tantangan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Tantangan Infrastruktur Digital SME</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Biaya Berlangganan</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Beban operasional bulanan (SaaS) yang terus meningkat seiring bertambahnya kapasitas data cloud.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Data Berserakan</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        File media, dokumen, dan arsip tersebar di berbagai perangkat tanpa sistem kategorisasi terpusat.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Administrasi Manual</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Pelacakan Invoice, Purchase Order, dan Surat Jalan masih mengandalkan spreadsheet manual yang rentan error.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solusi: The Hidden Engine -->
+    <section id="solusi" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center space-x-2 text-blue-600 font-semibold mb-4 bg-blue-100 px-4 py-2 rounded-lg">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>The Hidden Engine</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Google Apps Script (GAS)</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Berfungsi sebagai middleware jembatan. Tanpa server berbayar, GAS memproses routing data, memecah file upload, dan mengelola database secara otomatis.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-emerald-500 mt-1 mr-3 text-lg"></i>
+                            <div>
+                                <strong class="text-slate-800 block">Auto-Routing</strong>
+                                <span class="text-slate-600 text-sm">Menyortir file otomatis berdasarkan jenisnya.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-emerald-500 mt-1 mr-3 text-lg"></i>
+                            <div>
+                                <strong class="text-slate-800 block">Database Sync</strong>
+                                <span class="text-slate-600 text-sm">Sinkronisasi data real-time ke Google Sheets.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-emerald-500 mt-1 mr-3 text-lg"></i>
+                            <div>
+                                <strong class="text-slate-800 block">File Chunking</strong>
+                                <span class="text-slate-600 text-sm">Upload file besar aman melewati batas limit Google.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 bg-white p-8 rounded-2xl shadow-xl border border-slate-100 relative">
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-500/10 rounded-full blur-xl"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-emerald-500/10 rounded-full blur-xl"></div>
+                    <h3 class="text-xl font-bold mb-6 text-center border-b pb-4">Alur Kerja Otomatisasi Telegram Bot</h3>
+                    
+                    <div class="space-y-6 relative z-10">
+                        <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Input (Drag & Drop)</h4>
+                                <p class="text-xs text-slate-500">Berbagai format file sekaligus ke dalam topik General.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Trigger & Polling</h4>
+                                <p class="text-xs text-slate-500">Sistem mengumpulkan semua antrean file setiap 1 menit.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Processing</h4>
+                                <p class="text-xs text-slate-500">Bot mendeteksi format MIME type dari setiap file.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-emerald-50 rounded-xl border border-emerald-100">
+                            <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm">Output (Auto-Sorting)</h4>
+                                <p class="text-xs text-slate-500">Bot mem-forward file ke Topik spesifik (Gambar, PDF, Zip).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arsitektur ERP -->
+    <section id="arsitektur" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Arsitektur Berkatama ERP</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Dari Penyimpanan Statis ke Manajemen Operasional Dinamis.</p>
+                <div class="w-24 h-1 bg-blue-600 mx-auto rounded mt-6"></div>
+            </div>
+
+            <!-- 3 Tiers -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-slate-800 text-white rounded-2xl p-8 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl"><i class="fa-solid fa-desktop"></i></div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-400">FRONTEND TIER</h3>
+                    <p class="text-slate-300 text-sm">HTML WebApp. Antarmuka Dashboard, Purchase Request, Purchase Order, Quotation, dan Invoices.</p>
+                </div>
+                <div class="bg-blue-600 text-white rounded-2xl p-8 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl"><i class="fa-solid fa-server"></i></div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-100">MIDDLEWARE TIER</h3>
+                    <p class="text-blue-100 text-sm">GAS (Code.gs). Otentikasi (login), API requests, Auto ID Generator, dan pemecah upload file.</p>
+                </div>
+                <div class="bg-emerald-600 text-white rounded-2xl p-8 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-100">BACKEND TIER</h3>
+                    <p class="text-emerald-100 text-sm">Google Sheets & Drive. Tabel relasional sebagai Database terpusat, & Drive sebagai hosting lampiran.</p>
+                </div>
+            </div>
+
+            <!-- Database Relasional -->
+            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                <h3 class="text-2xl font-bold text-center mb-10 text-slate-800">Struktur Database Relasional</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
+                        <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <h4 class="font-bold text-slate-800 mb-2">Procurement</h4>
+                        <p class="text-xs text-slate-500">Melacak Purchase Requests & Purchase Orders harian.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center relative">
+                        <div class="text-indigo-500 text-3xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4 class="font-bold text-slate-800 mb-2">Sales & Finance</h4>
+                        <p class="text-xs text-slate-500">Pencatatan Quotations dan Invoices.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
+                        <div class="text-orange-500 text-3xl mb-4"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h4 class="font-bold text-slate-800 mb-2">Fulfillment</h4>
+                        <p class="text-xs text-slate-500">Pemantauan Status Delivery (Surat Jalan) dan tenaga lapangan.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 text-center">
+                        <div class="text-purple-500 text-3xl mb-4"><i class="fa-solid fa-handshake"></i></div>
+                        <h4 class="font-bold text-slate-800 mb-2">Partners</h4>
+                        <p class="text-xs text-slate-500">Direktori Suppliers dan Vendors terintegrasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Dashboard & Doc Gen -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-blue-400">Financial Health Dashboard</h3>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Pantau langsung kesehatan finansial perusahaan dengan grafik real-time. Melacak Total Invoices, status <span class="text-emerald-400 font-bold">PAID (Lunas)</span>, <span class="text-red-400 font-bold">OVERDUE (Jatuh Tempo)</span>, dan <span class="text-amber-400 font-bold">WAITING</span>.
+                    </p>
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                        <div class="flex items-center justify-between mb-4 pb-4 border-b border-slate-700">
+                            <span class="font-semibold text-sm text-slate-300">Direct Linkage</span>
+                            <i class="fa-solid fa-link text-blue-400"></i>
+                        </div>
+                        <p class="text-sm text-slate-400">
+                            Setiap baris Invoice di dashboard memiliki integrasi URL langsung ke file PDF fisiknya di Google Drive.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-emerald-400">Otomatisasi Dokumen (PDF)</h3>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Sistem mengekstrak data dinamis secara real-time dari Google Sheets (Nominal Tagihan, Jatuh Tempo, PPN, NPWP) lalu memetakannya ke templat standar PDF PT. Berkatama. Dokumen langsung siap cetak/kirim.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
+                            <i class="fa-solid fa-shield-halved text-2xl text-blue-400 mb-2"></i>
+                            <h4 class="font-bold text-sm">OAuth Scopes</h4>
+                            <p class="text-xs text-slate-400 mt-1">Pembatasan akses aman.</p>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
+                            <i class="fa-solid fa-users-gear text-2xl text-emerald-400 mb-2"></i>
+                            <h4 class="font-bold text-sm">Role-Based Access</h4>
+                            <p class="text-xs text-slate-400 mt-1">Hierarki: Admin, Purchasing, User.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Komparasi -->
+    <section id="komparasi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Analisis Komparasi Infrastruktur</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                    <thead>
+                        <tr class="bg-slate-100">
+                            <th class="py-4 px-6 font-bold text-slate-800 border-b border-slate-200">Dimensi</th>
+                            <th class="py-4 px-6 font-bold text-slate-800 border-b border-slate-200">Tradisional (SaaS ERP/Cloud)</th>
+                            <th class="py-4 px-6 font-bold text-blue-700 bg-blue-50 border-b border-blue-100">Custom (Telegram + GAS WebApp)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-600">
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 border-b border-slate-100 font-semibold">Biaya (Cost)</td>
+                            <td class="py-4 px-6 border-b border-slate-100">Tinggi (Berdasarkan jumlah user/storage)</td>
+                            <td class="py-4 px-6 border-b border-slate-100 bg-blue-50/50 font-bold text-blue-600">Rp 0 (Gratis sepenuhnya)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 border-b border-slate-100 font-semibold">Kapasitas Penyimpanan</td>
+                            <td class="py-4 px-6 border-b border-slate-100">Terbatas (mis. 50GB - 1TB)</td>
+                            <td class="py-4 px-6 border-b border-slate-100 bg-blue-50/50 font-bold text-blue-600">Unlimited (Telegram) / 15GB+ (Drive)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 border-b border-slate-100 font-semibold">Kustomisasi Fitur</td>
+                            <td class="py-4 px-6 border-b border-slate-100">Kaku (Tergantung vendor)</td>
+                            <td class="py-4 px-6 border-b border-slate-100 bg-blue-50/50 font-bold text-blue-600">100% Fleksibel (Kontrol kode penuh)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 font-semibold">Kecepatan Implementasi</td>
+                            <td class="py-4 px-6">Berbulan-bulan</td>
+                            <td class="py-4 px-6 bg-blue-50/50 font-bold text-blue-600">Cepat (Hitungan hari via Script deployment)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sintesis & CTA -->
+    <section class="py-20 bg-blue-600 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-700/20 pattern-dots"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl font-bold mb-6">Sintesis: Ekosistem Digital Paripurna</h2>
+            <p class="text-xl text-blue-100 mb-12 leading-relaxed">
+                Kekuatan sejati terletak pada <strong>Integrasi</strong>. Menggabungkan data relasional terstruktur (Google Sheets WebApp) dengan arsip file mentah tanpa batas (Telegram Bot) di bawah satu jembatan Google Apps Script.
+            </p>
+
+            <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-md border border-white/20 mb-12">
+                <h3 class="text-2xl font-bold mb-8">Mulai Bangun Ekosistem Anda</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                        <h4 class="font-bold mb-2">Siapkan Workspace</h4>
+                        <p class="text-sm text-blue-100">Buat fondasi database dengan Google Sheets dan Google Drive.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                        <h4 class="font-bold mb-2">Konfigurasi Bot</h4>
+                        <p class="text-sm text-blue-100">Gunakan BotFather di Telegram untuk mendapatkan Token & ID.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                        <h4 class="font-bold mb-2">Terapkan Script</h4>
+                        <p class="text-sm text-blue-100">Deploy Google Apps Script untuk mengintegrasikan logika.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-lg italic font-light text-blue-100">
+                "Inovasi tingkat Enterprise tidak selalu membutuhkan biaya besar — ia hanya membutuhkan logika arsitektur dan integrasi alat yang tepat."
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2026 PT. Berkatama. Generated automation dashboard roadmap based on internal documentation.</p>
+    </footer>
+
+</body>
+</html>
